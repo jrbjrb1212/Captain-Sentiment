@@ -35,20 +35,8 @@ def main():
 def string_edit(string):
     return_word = ""
     NON_VALID_WORDS = [
-        "<br/>",
-        "-",
-        "...",
-        ".",
-        "!",
-        ",",
-        "<div",
-        "<script>",
-        "||",
-        "[]",
-        "class=\"ads",
-        ">",
-        "<",
-        "<p>",
+        "<br/>", "-", "...", ".", "!", ",", "<div", "<script>", "||", "[]",
+        "class=\"ads", ">", "<", "<p>", "♪♪♪"
     ]
     for word in string.split():
         for entry in NON_VALID_WORDS:
@@ -72,12 +60,14 @@ def format_output(record, name):
     with open(filepath, "w") as out:
         out.write(name + "\n")
         for line in record:
+            wordcount += len(line.split())
+
+        for line in record:
             for word in line.split():
                 # if word.isalpha():
                 out.write(word.lower() + "\t")
                 i += 1
-                wordcount += 1
-                if i == 40:
+                if i == wordcount // 10:
                     out.write("\n")
                     i = 0
         out.write("\nWord count: " + str(wordcount) + " words")
