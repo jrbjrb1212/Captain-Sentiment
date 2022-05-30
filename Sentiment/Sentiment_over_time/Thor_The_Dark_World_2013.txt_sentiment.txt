@@ -1,176 +1,176 @@
-Interval Stop Word Count: 25 
-Sentiment: 0.0 
+Interval Stop Word Count: 1 
+Polarity: 0.0 
 Subjectivity: 0.0 
 
-Interval Stop Word Count: 25 
-Sentiment: 0.0 
+Interval Stop Word Count: 1 
+Polarity: 0.0 
 Subjectivity: 0.0 
 
-Interval Stop Word Count: 548 
-Sentiment: -0.09732142857142856 
+Interval Stop Word Count: 158 
+Polarity: -0.09732142857142856 
 Subjectivity: 0.7348214285714286 
 
-Interval Stop Word Count: 915 
-Sentiment: 0.11704545454545455 
+Interval Stop Word Count: 315 
+Polarity: 0.11704545454545455 
 Subjectivity: 0.5062500000000001 
 
-Interval Stop Word Count: 1298 
-Sentiment: 0.11249999999999999 
+Interval Stop Word Count: 472 
+Polarity: 0.11249999999999999 
 Subjectivity: 0.4888888888888888 
 
-Interval Stop Word Count: 1730 
-Sentiment: 0.13333333333333333 
+Interval Stop Word Count: 629 
+Polarity: 0.13333333333333333 
 Subjectivity: 0.45 
 
-Interval Stop Word Count: 2123 
-Sentiment: 0.205 
+Interval Stop Word Count: 786 
+Polarity: 0.205 
 Subjectivity: 0.41638888888888886 
 
-Interval Stop Word Count: 2616 
-Sentiment: 0.0805871212121212 
+Interval Stop Word Count: 943 
+Polarity: 0.0805871212121212 
 Subjectivity: 0.6543876262626264 
 
-Interval Stop Word Count: 3145 
-Sentiment: 0.09575892857142863 
+Interval Stop Word Count: 1100 
+Polarity: 0.09575892857142863 
 Subjectivity: 0.5531084656084656 
 
-Interval Stop Word Count: 3626 
-Sentiment: 0.16581632653061223 
+Interval Stop Word Count: 1257 
+Polarity: 0.16581632653061223 
 Subjectivity: 0.5122448979591837 
 
-Interval Stop Word Count: 4145 
-Sentiment: 0.3086734693877551 
+Interval Stop Word Count: 1414 
+Polarity: 0.3086734693877551 
 Subjectivity: 0.48724489795918363 
 
-Interval Stop Word Count: 4624 
-Sentiment: 0.19727272727272727 
+Interval Stop Word Count: 1571 
+Polarity: 0.19727272727272727 
 Subjectivity: 0.7709090909090909 
 
-Interval Stop Word Count: 5040 
-Sentiment: -0.021031746031746037 
+Interval Stop Word Count: 1728 
+Polarity: -0.021031746031746037 
 Subjectivity: 0.5758818342151675 
 
-Interval Stop Word Count: 5463 
-Sentiment: 0.015303030303030318 
+Interval Stop Word Count: 1885 
+Polarity: 0.015303030303030318 
 Subjectivity: 0.6293434343434343 
 
-Interval Stop Word Count: 5919 
-Sentiment: 0.10510204081632654 
+Interval Stop Word Count: 2042 
+Polarity: 0.10510204081632654 
 Subjectivity: 0.6158163265306122 
 
-Interval Stop Word Count: 6361 
-Sentiment: -0.5 
+Interval Stop Word Count: 2199 
+Polarity: -0.5 
 Subjectivity: 0.75 
 
-Interval Stop Word Count: 6882 
-Sentiment: -0.042328042328042326 
+Interval Stop Word Count: 2356 
+Polarity: -0.042328042328042326 
 Subjectivity: 0.5373015873015873 
 
-Interval Stop Word Count: 7315 
-Sentiment: -0.0336734693877551 
+Interval Stop Word Count: 2513 
+Polarity: -0.0336734693877551 
 Subjectivity: 0.4530612244897959 
 
-Interval Stop Word Count: 7726 
-Sentiment: -0.05707070707070708 
+Interval Stop Word Count: 2670 
+Polarity: -0.05707070707070708 
 Subjectivity: 0.5810606060606062 
 
-Interval Stop Word Count: 8198 
-Sentiment: 0.2222222222222222 
+Interval Stop Word Count: 2827 
+Polarity: 0.2222222222222222 
 Subjectivity: 0.7222222222222223 
 
-Interval Stop Word Count: 8617 
-Sentiment: 0.30000000000000004 
+Interval Stop Word Count: 2984 
+Polarity: 0.30000000000000004 
 Subjectivity: 0.5750000000000001 
 
-Interval Stop Word Count: 9060 
-Sentiment: 0.27999999999999997 
+Interval Stop Word Count: 3141 
+Polarity: 0.27999999999999997 
 Subjectivity: 0.5414285714285714 
 
-Interval Stop Word Count: 9483 
-Sentiment: -0.20555555555555557 
+Interval Stop Word Count: 3298 
+Polarity: -0.20555555555555557 
 Subjectivity: 0.4444444444444444 
 
-Interval Stop Word Count: 9962 
-Sentiment: 0.07018890200708384 
+Interval Stop Word Count: 3455 
+Polarity: 0.07018890200708384 
 Subjectivity: 0.5526498753771482 
 
-Interval Stop Word Count: 10362 
-Sentiment: 0.0619047619047619 
+Interval Stop Word Count: 3612 
+Polarity: 0.0619047619047619 
 Subjectivity: 0.3095238095238095 
 
-Interval Stop Word Count: 10754 
-Sentiment: -0.1755952380952381 
+Interval Stop Word Count: 3769 
+Polarity: -0.1755952380952381 
 Subjectivity: 0.3267857142857143 
 
-Interval Stop Word Count: 11133 
-Sentiment: 0.17777777777777778 
+Interval Stop Word Count: 3926 
+Polarity: 0.17777777777777778 
 Subjectivity: 0.6064814814814815 
 
-Interval Stop Word Count: 11548 
-Sentiment: 0.23066558441558435 
+Interval Stop Word Count: 4083 
+Polarity: 0.23066558441558435 
 Subjectivity: 0.5444805194805193 
 
-Interval Stop Word Count: 11936 
-Sentiment: 0.26203703703703707 
+Interval Stop Word Count: 4240 
+Polarity: 0.26203703703703707 
 Subjectivity: 0.5712962962962964 
 
-Interval Stop Word Count: 12432 
-Sentiment: 0.329004329004329 
+Interval Stop Word Count: 4397 
+Polarity: 0.329004329004329 
 Subjectivity: 0.6396103896103895 
 
-Interval Stop Word Count: 13098 
-Sentiment: 0.2708730158730158 
+Interval Stop Word Count: 4554 
+Polarity: 0.2708730158730158 
 Subjectivity: 0.8192063492063492 
 
-Interval Stop Word Count: 13535 
-Sentiment: 0.13999999999999999 
+Interval Stop Word Count: 4711 
+Polarity: 0.13999999999999999 
 Subjectivity: 0.74 
 
-Interval Stop Word Count: 14055 
-Sentiment: 0.14081632653061224 
+Interval Stop Word Count: 4868 
+Polarity: 0.14081632653061224 
 Subjectivity: 0.5051020408163265 
 
-Interval Stop Word Count: 14478 
-Sentiment: 0.018571428571428572 
+Interval Stop Word Count: 5025 
+Polarity: 0.018571428571428572 
 Subjectivity: 0.6735714285714286 
 
-Interval Stop Word Count: 14920 
-Sentiment: 0.018571428571428582 
+Interval Stop Word Count: 5182 
+Polarity: 0.018571428571428582 
 Subjectivity: 0.4302380952380952 
 
-Interval Stop Word Count: 15359 
-Sentiment: 0.37142857142857144 
+Interval Stop Word Count: 5339 
+Polarity: 0.37142857142857144 
 Subjectivity: 0.5857142857142856 
 
-Interval Stop Word Count: 15853 
-Sentiment: 0.05793650793650794 
+Interval Stop Word Count: 5496 
+Polarity: 0.05793650793650794 
 Subjectivity: 0.40238095238095234 
 
-Interval Stop Word Count: 16328 
-Sentiment: 0.3408163265306123 
+Interval Stop Word Count: 5653 
+Polarity: 0.3408163265306123 
 Subjectivity: 0.7820861678004535 
 
-Interval Stop Word Count: 16866 
-Sentiment: 0.25474837662337657 
+Interval Stop Word Count: 5810 
+Polarity: 0.25474837662337657 
 Subjectivity: 0.5632711038961038 
 
-Interval Stop Word Count: 17337 
-Sentiment: -0.0857142857142857 
+Interval Stop Word Count: 5967 
+Polarity: -0.0857142857142857 
 Subjectivity: 0.6059523809523809 
 
-Interval Stop Word Count: 17712 
-Sentiment: 0.28409090909090906 
+Interval Stop Word Count: 6124 
+Polarity: 0.28409090909090906 
 Subjectivity: 0.6761363636363636 
 
-Interval Stop Word Count: 18038 
-Sentiment: 0.38371212121212117 
+Interval Stop Word Count: 6281 
+Polarity: 0.38371212121212117 
 Subjectivity: 0.6375000000000001 
 
-Interval Stop Word Count: 18097 
-Sentiment: 0.6 
+Interval Stop Word Count: 6307 
+Polarity: 0.6 
 Subjectivity: 0.7 
 
-Interval Stop Word Count: 18120 
-Sentiment: 0.0 
+Interval Stop Word Count: 6311 
+Polarity: 0.0 
 Subjectivity: 0.0 
 

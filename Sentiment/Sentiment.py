@@ -1,7 +1,5 @@
-from typing import Text
 import pandas as pd
 from textblob import TextBlob
-from sklearn.feature_extraction import text
 import os
 
 raw_data_path = "../Corpus/Transcripts/"
@@ -19,7 +17,7 @@ STOP_WORDS = [
     'hereby', 'beside', 'me', 'together', 'toward', 'with', 'something',
     'although', 'less', 'himself', 'sixty', 'they', 'eg', 'become', 'third',
     'neither', 'what', 'themselves', 'ten', 'due', 'moreover', 'mostly',
-    'back', 'out', 'itself', 'yourselves', 'see', 'cry', 'hereupon', 'myself',
+    'back', 'out', 'itself', 'yourselves', 'see', 'hereupon', 'myself',
     'thereafter', 'often', 'latter', 'many', 'yet', 'her', 'along', 'last',
     'thus', 'part', 'hers', 'already', 'whoever', 'nevertheless', 'almost',
     'i', 'interest', 'became', 'none', 'whenever', 'system', 'however', 'onto',
@@ -62,11 +60,11 @@ for (dirpath, dirnames, filenames) in os.walk(raw_data_path):
                     for word in line.split():
                         if word not in STOP_WORDS:
                             cleaned_line += "\t" + word
-                    word_count += len(cleaned_line)
+                        word_count += 1
                     out.write(
                         f"Interval Stop Word Count: {str(word_count)} \n")
                     out.write(
-                        f'Sentiment: {str(TextBlob(cleaned_line).sentiment.polarity)} \n'
+                        f'Polarity: {str(TextBlob(cleaned_line).sentiment.polarity)} \n'
                     )
                     out.write(
                         f'Subjectivity: {str(TextBlob(cleaned_line).sentiment.subjectivity)} \n'
