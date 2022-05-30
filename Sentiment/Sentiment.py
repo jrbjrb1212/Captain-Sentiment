@@ -57,7 +57,7 @@ with open(raw_data_path + "Ant-Man_2015.txt", "r") as f:
         for word in line.split():
             if word not in STOP_WORDS:
                 cleaned_line += "\t" + word
-        # print(cleaned_line)
+        print(cleaned_line)
 
         print(str(TextBlob(cleaned_line).sentiment.polarity) + "\n")
 
