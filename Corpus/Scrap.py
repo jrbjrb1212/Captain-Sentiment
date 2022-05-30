@@ -77,7 +77,7 @@ def format_output(record, name):
                 out.write(word.lower() + "\t")
                 i += 1
                 wordcount += 1
-                if i == 20:
+                if i == 40:
                     out.write("\n")
                     i = 0
         out.write("\nWord count: " + str(wordcount) + " words")
