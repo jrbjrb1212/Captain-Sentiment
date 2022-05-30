@@ -1,0 +1,176 @@
+Interval Stop Word Count: 16 
+Sentiment: 0.0 
+Subjectivity: 0.0 
+
+Interval Stop Word Count: 16 
+Sentiment: 0.0 
+Subjectivity: 0.0 
+
+Interval Stop Word Count: 928 
+Sentiment: 0.16734126984126985 
+Subjectivity: 0.5382142857142856 
+
+Interval Stop Word Count: 1815 
+Sentiment: 0.22504638218923928 
+Subjectivity: 0.5609552154195011 
+
+Interval Stop Word Count: 2567 
+Sentiment: 0.17004329004329002 
+Subjectivity: 0.5795093795093795 
+
+Interval Stop Word Count: 3429 
+Sentiment: 0.08285714285714287 
+Subjectivity: 0.4373809523809523 
+
+Interval Stop Word Count: 4398 
+Sentiment: 0.11928071928071929 
+Subjectivity: 0.6115384615384616 
+
+Interval Stop Word Count: 5390 
+Sentiment: 0.14836309523809524 
+Subjectivity: 0.5000992063492065 
+
+Interval Stop Word Count: 6350 
+Sentiment: 0.14181547619047621 
+Subjectivity: 0.6160714285714286 
+
+Interval Stop Word Count: 7300 
+Sentiment: 0.11942857142857141 
+Subjectivity: 0.45347619047619053 
+
+Interval Stop Word Count: 8185 
+Sentiment: 0.03725490196078431 
+Subjectivity: 0.6407563025210083 
+
+Interval Stop Word Count: 9078 
+Sentiment: 0.04891774891774893 
+Subjectivity: 0.5236871823828346 
+
+Interval Stop Word Count: 9967 
+Sentiment: 0.3510822510822511 
+Subjectivity: 0.620021645021645 
+
+Interval Stop Word Count: 10844 
+Sentiment: 0.16610750360750356 
+Subjectivity: 0.546906876648256 
+
+Interval Stop Word Count: 11731 
+Sentiment: 0.2652336860670194 
+Subjectivity: 0.5689373897707232 
+
+Interval Stop Word Count: 12554 
+Sentiment: 0.05595238095238096 
+Subjectivity: 0.5221804511278196 
+
+Interval Stop Word Count: 13384 
+Sentiment: 0.21071428571428574 
+Subjectivity: 0.6707142857142858 
+
+Interval Stop Word Count: 14068 
+Sentiment: 0.20833333333333334 
+Subjectivity: 0.43571428571428567 
+
+Interval Stop Word Count: 15003 
+Sentiment: 0.12943722943722943 
+Subjectivity: 0.5238095238095237 
+
+Interval Stop Word Count: 15897 
+Sentiment: 0.1548824221046443 
+Subjectivity: 0.5994091710758377 
+
+Interval Stop Word Count: 16714 
+Sentiment: -0.00033068783068784184 
+Subjectivity: 0.6626322751322752 
+
+Interval Stop Word Count: 17481 
+Sentiment: 0.3480654761904762 
+Subjectivity: 0.6563988095238096 
+
+Interval Stop Word Count: 18284 
+Sentiment: 0.033055555555555546 
+Subjectivity: 0.6825925925925926 
+
+Interval Stop Word Count: 19167 
+Sentiment: 0.18257936507936506 
+Subjectivity: 0.6126984126984126 
+
+Interval Stop Word Count: 19996 
+Sentiment: 0.3875 
+Subjectivity: 0.6141666666666666 
+
+Interval Stop Word Count: 20862 
+Sentiment: 0.2641666666666667 
+Subjectivity: 0.5491666666666666 
+
+Interval Stop Word Count: 21685 
+Sentiment: 0.19339451058201054 
+Subjectivity: 0.5410218253968255 
+
+Interval Stop Word Count: 22629 
+Sentiment: 0.19879712301587302 
+Subjectivity: 0.5587797619047619 
+
+Interval Stop Word Count: 23480 
+Sentiment: 0.1670068027210884 
+Subjectivity: 0.451530612244898 
+
+Interval Stop Word Count: 24513 
+Sentiment: 0.12671957671957673 
+Subjectivity: 0.5501984126984127 
+
+Interval Stop Word Count: 25355 
+Sentiment: 0.08499149659863946 
+Subjectivity: 0.5891581632653061 
+
+Interval Stop Word Count: 26247 
+Sentiment: 0.22499999999999998 
+Subjectivity: 0.4916666666666667 
+
+Interval Stop Word Count: 27280 
+Sentiment: 0.15991532976827094 
+Subjectivity: 0.503475935828877 
+
+Interval Stop Word Count: 28099 
+Sentiment: 0.20585618085618085 
+Subjectivity: 0.6161255411255411 
+
+Interval Stop Word Count: 28998 
+Sentiment: 0.19953703703703704 
+Subjectivity: 0.4819444444444445 
+
+Interval Stop Word Count: 29956 
+Sentiment: 0.19583549783549783 
+Subjectivity: 0.539896103896104 
+
+Interval Stop Word Count: 30811 
+Sentiment: -0.022023809523809525 
+Subjectivity: 0.48464285714285715 
+
+Interval Stop Word Count: 31703 
+Sentiment: 0.23292540792540792 
+Subjectivity: 0.5311188811188811 
+
+Interval Stop Word Count: 32538 
+Sentiment: 0.09837121212121214 
+Subjectivity: 0.5421590909090909 
+
+Interval Stop Word Count: 33374 
+Sentiment: 0.22964285714285712 
+Subjectivity: 0.5470238095238094 
+
+Interval Stop Word Count: 34207 
+Sentiment: 0.18203071083505867 
+Subjectivity: 0.554011387163561 
+
+Interval Stop Word Count: 35166 
+Sentiment: 0.12174963924963927 
+Subjectivity: 0.5577765752765752 
+
+Interval Stop Word Count: 35294 
+Sentiment: -0.12847222222222224 
+Subjectivity: 0.8333333333333334 
+
+Interval Stop Word Count: 35318 
+Sentiment: 0.0 
+Subjectivity: 0.0 
+

@@ -1,3 +1,4 @@
+from typing import Text
 import pandas as pd
 from textblob import TextBlob
 from sklearn.feature_extraction import text
@@ -49,25 +50,25 @@ STOP_WORDS = [
 
 sentiment_score = 0
 
-# test
-with open(raw_data_path + "Ant-Man_2015.txt", "r") as f:
-    for line in f:
-        # print(line)
-        cleaned_line = ""
-        for word in line.split():
-            if word not in STOP_WORDS:
-                cleaned_line += "\t" + word
-        print(cleaned_line)
-
-        print(str(TextBlob(cleaned_line).sentiment.polarity) + "\n")
-
-# for (dirpath, dirnames, filenames) in os.walk(raw_data_path):
-#     for filename in filenames:
-#         with open(dirpath + filename, "r") as f:
-#             for line in f:
-#                 clearned_line = ""
-#                 for word in line:
-#                     if word not in STOP_WORDS:
-#                         cleaned_line += word
-#                 print(str(TextBlob(clearned_line).sentiment.polarity) + "\n")
-#         print("")
+for (dirpath, dirnames, filenames) in os.walk(raw_data_path):
+    for filename in filenames:
+        word_count = 0
+        print(dirpath + filename)
+        with open(dirpath + filename, "r") as f:
+            out_path = "Sentiment_over_time/" + filename + "_sentiment.txt"
+            with open(out_path, "w") as out:
+                for line in f:
+                    cleaned_line = ""
+                    for word in line.split():
+                        if word not in STOP_WORDS:
+                            cleaned_line += "\t" + word
+                    word_count += len(cleaned_line)
+                    out.write(
+                        f"Interval Stop Word Count: {str(word_count)} \n")
+                    out.write(
+                        f'Sentiment: {str(TextBlob(cleaned_line).sentiment.polarity)} \n'
+                    )
+                    out.write(
+                        f'Subjectivity: {str(TextBlob(cleaned_line).sentiment.subjectivity)} \n'
+                    )
+                    out.write("\n")
