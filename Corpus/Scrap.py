@@ -1,14 +1,11 @@
-from black import main
 import requests
 from bs4 import BeautifulSoup
-import re
-
-# r = requests.get("https://transcripts.foreverdreaming.org/viewtopic.php?f=953&t=36758&sid=e688625cc6f46858a91098d39640303c")
-# print(r.text)
 
 
 # open txt file containing all URLs for movies to strip
 def main(self=None):
+    name = ""
+    record = []
     with open("websites.txt", "r") as f:
         for line in f:
             record = []
@@ -20,25 +17,37 @@ def main(self=None):
                     if tag.name not in 'p':
                         tag = tag.replaceWith(tag.renderContents())
                     record.append(tag.renderContents().decode('UTF-8'))
-                format_output(record)
-                print("Done stripping")
-
+                format_output(record, name)
+                print("Done stripping " + name)
             else:
-                print("Now stripping " + line)
+                name = ""
+                for char in line:
+                    if char == ' ':
+                        name += "_"
+                        continue
+                    name += char
+                print("*************************")
+                print("Now stripping " + name)
 
 
-def format_output(record):
+def format_output(record, name):
     # remove first entry and last 3 entries as they are not actual script
     record = record[1:-4]
     i = 0
-    with open("test.txt", "w") as out:
+    wordcount = 0
+    filepath = "Transcripts/" + name + ".txt"
+    with open(filepath, "w") as out:
+        out.write(name + "\n")
         for line in record:
             for word in line.split():
-                out.write(word.lower() + "\t")
-                i += 1
-                if i == 20:
-                    out.write("\n")
-                    i = 0
+                if word.isalpha():
+                    out.write(word.lower() + "\t")
+                    i += 1
+                    wordcount += 1
+                    if i == 20:
+                        out.write("\n")
+                        i = 0
+        out.write("\nWord count: " + str(wordcount) + " words")
 
 
 main()
