@@ -11,3 +11,4 @@ pip3 install textblob
 pip3 install flask
 pip3 install virtualenv
 pip3 install flask-sqlalchemy
+npm install chart.js
