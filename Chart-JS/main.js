@@ -10,29 +10,35 @@ gradient.addColorStop(1,'rgba(0,210,255,0.3)');
 
 
 const labels = [
-    '2012',
-    '2013',
-    '2014',
-    '2015',
-    '2016',
-    '2017',
-    '2018',
-    '2019',
-    '2020',
+    '237',
+    '473',
+    '709',
+    '945',
+    '1181',
+    '1417',
+    '1653',
+    '1800',
+    '1900',
+    '2000',
+    '2100',
+    '2200',
+    '2400',
 ]
+// const labels = lengthData
 
 const data = {
     labels,
     datasets: [
         {
-            data: [211, 326, 165, 350, 420, 370, 500, 375, 315],
-            label: "Minecraft Sales",
+            data: [0.1303030303030303, 0.23125, 0.20941558441558447, 0.008516483516483495, 0.3115601503759398, 0.06313131313131315, 0.023427552839317554, -0.62, -0.31, -0.11, -.015, .12, .30],
+            // data: polarityLabels,
+            label: "Ant Man 2015",
             fill: true,
+            display: false,
             backgroundColor: gradient,
             borderColor: "grey",
             pointBackgroundColor: "white",
             tension: 0.4,
-        
         },  
     ],
 };
@@ -44,7 +50,7 @@ const config = {
         responive: true,
         radius: 5,
         hitRadius: 30,
-        hoverRadius: 12,
+        hoverRadius: 12,      
         animation:{
             onComplete: () => {
                 delayed = true;
@@ -57,18 +63,36 @@ const config = {
                 return delay;
             },
         },
+
         scales: {
-            y: {
-                ticks:{
-                    callback: function (value){
-                        return "$" + value + "m";
-                    },
+            x: {
+                title: {
+                    display: true,
+                    text: "Movie Intervals",
+                    color: "black",
                 },
+                ticks: {
+                    display: false,
+                    color: "black",
+                }
             },
-        },
+            y: {
+                title: {
+                    display: true,
+                    text: "Polarity",
+                    color: "black"
+                },
+                ticks: {
+                    color: 'black',
+                }
+            }
     },
+        
+},
 };
 
 const myChart = new Chart(ctx, config)
+
+
 
 
