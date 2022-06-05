@@ -24,14 +24,12 @@ const labels = [
     '2200',
     '2400',
 ]
-// const labels = lengthData
 
 const data = {
     labels,
     datasets: [
         {
             data: [0.1303030303030303, 0.23125, 0.20941558441558447, 0.008516483516483495, 0.3115601503759398, 0.06313131313131315, 0.023427552839317554, -0.62, -0.31, -0.11, -.015, .12, .30],
-            // data: polarityLabels,
             label: "Ant Man 2015",
             fill: true,
             display: false,
