@@ -7,20 +7,24 @@ function makeChart(movie) {
     gradient.addColorStop(0,'rgba(58,123,213,1');
     gradient.addColorStop(1,'rgba(0,210,255,0.3)');
 
-    var polarityLabels = movie.map(function(d) {
+    var name = movie.map(function(d){
+        return d.Name
+    });
+    const polarityLabels = movie.map(function(d) {
         return d.Polarity;
     });
-    var weeksData = movie.map(function(d) {
+    const lengthData = movie.map(function(d) {
         return +d.Length;
     });
     
     const data = {
-        labels: weeksData,
+        labels: lengthData,
         datasets: [
             {
                 data: polarityLabels,
-                label: "Ant Man 2015",
+                label: name[0],
                 fill: true,
+                display: true,
                 backgroundColor: gradient,
                 borderColor: "grey",
                 pointBackgroundColor: "white",
@@ -37,7 +41,7 @@ function makeChart(movie) {
             maintainAspectRatio: false,
             radius: 5,
             hitRadius: 30,
-            hoverRadius: 50,
+            hoverRadius: 12,
             animation: {
                 onComplete: () => {
                     delayed = true;
@@ -54,7 +58,7 @@ function makeChart(movie) {
                 x: {
                     title: {
                         display: true,
-                        text: "Movie Intervals",
+                        text: "Course of the Movie",
                         color: "black",
                     },
                     ticks: {
@@ -69,6 +73,7 @@ function makeChart(movie) {
                         color: "black"
                     },
                     ticks: {
+                        display: true,
                         color: 'black',
                     }
                 }
@@ -77,7 +82,7 @@ function makeChart(movie) {
 
     };
 
-    const myChart = new Chart(ctx, config)
+    const chart = new Chart(ctx, config)
 
     // var chart = new Chart(ctx, {
     //     type: "line",
