@@ -84,28 +84,6 @@ function makeChart(movie) {
 
     const chart = new Chart(ctx, config)
 
-    // var chart = new Chart(ctx, {
-    //     type: "line",
-    //     options: {
-    //         responive: true,
-    //         maintainAspectRatio: false,
-    //         radius: 5,
-    //         hitRadius: 30,
-    //         hoverRadius: 30,
-    //         legend: {
-    //             display: false
-    //         }
-    //     },
-    //     data: {
-    //         labels: weeksData,
-    //         datasets: [
-    //             {
-    //             data: playerLabels
-    //             }
-    //         ]
-    //     }
-    // });
-
 } //function ending
 
 
