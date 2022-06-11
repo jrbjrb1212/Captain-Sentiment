@@ -67,7 +67,7 @@ def format_output(record, name):
                 # if word.isalpha():
                 out.write(word.lower() + "\t")
                 i += 1
-                if i == wordcount // 40:
+                if i == wordcount // 15:
                     out.write("\n")
                     i = 0
         out.write("\nWord count: " + str(wordcount) + " words")

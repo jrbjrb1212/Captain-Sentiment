@@ -52,21 +52,34 @@ for (dirpath, dirnames, filenames) in os.walk(raw_data_path):
     for filename in filenames:
         word_count = 0
         print(dirpath + filename)
+        outname = filename.split("\n.txt")[0]
         with open(dirpath + filename, "r") as f:
-            out_path = "Sentiment_over_time/" + filename + "_sentiment.txt"
+            # out_path = "Sentiment_over_time/" + filename + "_sentiment.txt"
+            out_path = "Sentiment_CSV/" + outname + "_sentiment.csv"
             with open(out_path, "w") as out:
+                out.write(f"Name,Polarity,Length,Subjectivity\n")
                 for line in f:
-                    cleaned_line = ""
-                    for word in line.split():
-                        if word not in STOP_WORDS:
-                            cleaned_line += "\t" + word
-                        word_count += 1
-                    out.write(
-                        f"Interval Stop Word Count: {str(word_count)} \n")
-                    out.write(
-                        f'Polarity: {str(TextBlob(cleaned_line).sentiment.polarity)} \n'
-                    )
-                    out.write(
-                        f'Subjectivity: {str(TextBlob(cleaned_line).sentiment.subjectivity)} \n'
-                    )
-                    out.write("\n")
+                    if len(line) > 100:
+                        cleaned_line = ""
+                        for word in line.split():
+                            if word not in STOP_WORDS:
+                                cleaned_line += "\t" + word
+                            word_count += 1
+
+                        line_polarity = str("{:.4f}".format(
+                            TextBlob(cleaned_line).sentiment.polarity))
+                        line_subjectivity = str("{:.4f}".format(
+                            TextBlob(cleaned_line).sentiment.subjectivity))
+
+                        out.write(
+                            f"{outname},{line_polarity},{str(word_count)},{line_subjectivity}\n"
+                        )
+
+                    # out.write(
+                    #     f"Interval Stop Word Count: {str(word_count)} \n")
+                    # out.write(
+                    #     f'Polarity: {str(TextBlob(cleaned_line).sentiment.polarity)} \n'
+                    # )
+                    # out.write(
+                    #     f'Subjectivity: {str(TextBlob(cleaned_line).sentiment.subjectivity)} \n'
+                    # )
