@@ -1,20 +1,22 @@
 
 
-const Header = () => {
+const Header = ({ movies }) => {
+    // extracting funtction
+    const id = movies.map( function (movie) {
+        return movie.id;
+    });
+
+    console.log(id)
     return (
         <header className='header'>
             <h1>Captain Sentiment</h1>
             <ul>
-                <li><a href=""> About </a></li>
-                <li><a href=""> Data Interpretation </a></li>
-                <li><a href=""> Technologies Used </a></li>
-                <li><a href=""> Github </a></li>
-
+                <li><a href="" > About </a></li> {/* Short page about how this project came to be */}
+                <li><a href=""> Data Interpretation </a></li> {/* Create an data interpretation page later */}
+                <li><a href=""> Technologies Used </a></li> {/* Create page with the technologies used later Somewhat like a readme */}
+                <li><a href=""> Github </a></li> {/* Fill with public Github Link later */}     
             </ul>
-            {/* <h4><a href=""> About </a></h4>
-            <h4><a href=""> Data Interpretation </a></h4>
-            <h4><a href=""> Technologies Used </a></h4>
-            <h4><a href=""> Github </a></h4> */}
+            
             
         </header>
     )
