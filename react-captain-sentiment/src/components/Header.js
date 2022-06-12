@@ -2,11 +2,11 @@
 
 const Header = ({ movies }) => {
     // extracting funtction
-    const id = movies.map( function (movie) {
-        return movie.id;
-    });
+    // const id = movies.map( function (movie) {
+    //     return movie.id;
+    // });
 
-    console.log(id)
+    // console.log(id)
     return (
         <header className='header'>
             <h1>Captain Sentiment</h1>

@@ -1,5 +1,7 @@
-import Header from "./components/Header"
 // start with header work down from there
+import Header from "./components/Header"
+import Cardstack from "./components/Cardstack"
+
 
 function App() {
   //test data
@@ -17,7 +19,7 @@ function App() {
 
     <div className="App">
       <Header movies={movies} />  {/*  Header for webstie*/}
-      
+      <Cardstack movies={movies} /> { /* big card stack */}
     </div>
   );
 }
