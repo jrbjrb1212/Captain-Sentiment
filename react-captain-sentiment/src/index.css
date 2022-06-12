@@ -152,3 +152,16 @@ ul {
   width: 150px;
   height: 300px;
 }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  margin-right: 50px;
+  margin-left: 50px;
+  color: black;
+  text-indent: 20px;
+  border-style: solid;
+}

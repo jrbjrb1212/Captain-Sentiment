@@ -1,5 +1,3 @@
-
-
 const Header = ({ movies }) => {
     // extracting funtction
     // const id = movies.map( function (movie) {

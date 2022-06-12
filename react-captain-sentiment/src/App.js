@@ -21,6 +21,7 @@ function App() {
     <div className="App">
       <Header movies={movies} />  {/*  Header for webstie*/}
       <Cardstack movies={movies} /> { /* big card stack */}
+      <Footer />
     </div>
   );
 }
