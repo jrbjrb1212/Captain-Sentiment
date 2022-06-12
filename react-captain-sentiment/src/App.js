@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import * as d3 from "d3";
 import data from './test_csv.csv';
 
@@ -8,16 +8,13 @@ import Cardstack from "./components/Cardstack"
 import Footer from "./components/Footer"
 
 
-d3.csv(data).then(unpackData)
-
-
 // overwrittable global vars to avoid local unpackData var problems
-var name;
-var polarityLabels;
-var lengthData;
-var subjectivityLabels;
+let name;
+let polarityLabels;
+let lengthData;
+let subjectivityLabels;
 
-function unpackData(movie){
+async function unpackData(movie){
     name = movie.map(function(d){
         return d.Name
     });
@@ -30,15 +27,14 @@ function unpackData(movie){
     subjectivityLabels = movie.map(function(d) {
       return d.Subjectivity
     })
-    // console.log(subjectivityLabels)
-    // console.log(lengthData)
-    // console.log(polarityLabels)
-    // console.log(name)
+    // return [name, polarityLabels, lengthData, subjectivityLabels]
 }
 
-function App() {
+async function App() {
+    await d3.csv(data).then(unpackData)
     //test data
     // * fill later with an all gather function *
+    
     const movies = [
       {
         id: 1,
@@ -48,12 +44,20 @@ function App() {
         lengthData: lengthData,
         moviePoster: "https://flxt.tmsimg.com/assets/p10951814_p_v8_af.jpg",
       }
+      // {
+      //   id: 1,
+      //   movieName: "Ant-Man 2015",
+      //   polarity: unpackedData[1],
+      //   subjectivty: unpackedData[3],
+      //   lengthData: unpackedData[2],
+      //   moviePoster: "https://flxt.tmsimg.com/assets/p10951814_p_v8_af.jpg",
+      // }
     ]
-
+    
   return (
 
     <div className="App">
-      <Header movies={movies} />  {/*  Header for webstie*/}
+      <Header />  {/*  Header for webstie*/}
       <Cardstack movies={movies} /> { /* big card stack */}
       <Footer />
     </div>

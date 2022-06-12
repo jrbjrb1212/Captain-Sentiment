@@ -2,7 +2,7 @@ import Chart from "./Chart"
 import MoviePoster from "./MoviePoster"
 
 export const Card = ( { movies }) => {
-    // console.log(movies)
+    console.log(movies)
     const movieTitle = movies.map( function (movie) {
         return movie.movieName;
     });
@@ -22,7 +22,7 @@ export const Card = ( { movies }) => {
             {/* Resize the image */}
 
             <MoviePoster imageLink={moviePoster} movieTitle={movieTitle}/>
-            <Chart movieData={movies} />
+            <Chart movies={movies} />
 
             
         </div>

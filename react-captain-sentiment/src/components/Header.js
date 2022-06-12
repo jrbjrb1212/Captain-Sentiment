@@ -1,4 +1,4 @@
-const Header = ({ movies }) => {
+const Header = () => {
     return (
         <header className='header'>
             <h1>Captain Sentiment</h1>
