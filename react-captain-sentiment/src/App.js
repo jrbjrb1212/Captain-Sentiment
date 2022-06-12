@@ -10,6 +10,8 @@ import Footer from "./components/Footer"
 
 d3.csv(data).then(unpackData)
 
+
+// overwrittable global vars to avoid local unpackData var problems
 var name;
 var polarityLabels;
 var lengthData;
@@ -35,11 +37,6 @@ function unpackData(movie){
 }
 
 function App() {
-    // mapping function for polarity and subjectivity
-
-
-    // mapping function for subjectivity
-
     //test data
     // * fill later with an all gather function *
     const movies = [
@@ -52,7 +49,7 @@ function App() {
         moviePoster: "https://flxt.tmsimg.com/assets/p10951814_p_v8_af.jpg",
       }
     ]
-    
+
   return (
 
     <div className="App">
