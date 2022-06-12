@@ -165,3 +165,16 @@ ul {
   text-indent: 20px;
   border-style: solid;
 }
+
+.chart {
+  position: relative;
+  width: 50vw;
+  height: 50vh;
+}
+
+/* body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+} */

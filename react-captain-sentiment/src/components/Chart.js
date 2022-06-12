@@ -1,4 +1,4 @@
-export const Chart = () => {
+export const Chart = ( { movie }) => {
     return (
         <div>
             

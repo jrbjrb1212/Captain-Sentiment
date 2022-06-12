@@ -6,7 +6,6 @@ export const Cardstack = ({ movies }) => {
         return movie.movieName;
     });
 
-    console.log(movieTitle)
     return (
         <div className='cardstack-body'>  {/* Create a big space to use */}
             {/* Call card when a new movie is needed*/}
