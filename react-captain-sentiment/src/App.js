@@ -1,6 +1,7 @@
 // start with header work down from there
 import Header from "./components/Header"
 import Cardstack from "./components/Cardstack"
+import Footer from "./components/Footer"
 
 
 function App() {

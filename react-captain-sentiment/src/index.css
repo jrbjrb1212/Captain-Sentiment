@@ -121,3 +121,24 @@ ul {
   list-style-type: none;
   text-indent: -200px;
 }
+
+.cardstack-body {
+  border-style: double;
+  border-color: black;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  margin-right: 50px;
+  margin-left: 50px;
+  height: 500px;
+}
+
+.movie-name {
+  border-style: solid;
+  margin: auto;
+  border-collapse: collapse;
+  border-style: blue;
+  margin-left: 25px;
+  margin-top: 15px;
+  width: 150px;
+  text-align: center;
+}
