@@ -142,3 +142,13 @@ ul {
   width: 150px;
   text-align: center;
 }
+
+.movie-poster {
+  border-style: solid;
+  border-style: black;
+  padding: 0%;
+  margin-left: 25px;
+  margin-top: 10px;
+  width: 150px;
+  height: 300px;
+}

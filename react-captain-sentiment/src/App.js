@@ -12,7 +12,7 @@ function App() {
         movieName: "Ant-Man 2015",
         polarity: "polarityLabels",
         subjectivty: "subjectivtyLabels",
-        // moviePoster: "https://flxt.tmsimg.com/assets/p10951814_p_v8_af.jpg",
+        moviePoster: "https://flxt.tmsimg.com/assets/p10951814_p_v8_af.jpg",
       }
     ]
 

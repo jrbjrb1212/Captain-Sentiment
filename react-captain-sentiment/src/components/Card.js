@@ -1,12 +1,17 @@
 import Chart from "./Chart"
-import Movie from "./Movie"
+import MoviePoster from "./MoviePoster"
 
 export const Card = ( { movies }) => {
+    console.log(movies)
     const movieTitle = movies.map( function (movie) {
         return movie.movieName;
     });
 
-    console.log(movieTitle)
+    const moviePoster = movies.map( function (movie) {
+        return movie.moviePoster;
+    });
+    console.log(moviePoster)
+
     return (
         <div>
             {/* I am going to have to create an overlay of items */}
@@ -16,6 +21,9 @@ export const Card = ( { movies }) => {
             <h3 className="movie-name" >{movieTitle}</h3>
             
             {/* Resize the image */}
+
+            <MoviePoster imageLink={moviePoster} movieTitle={movieTitle}/>
+
             
         </div>
     )
