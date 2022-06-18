@@ -14,7 +14,7 @@ let polarityLabels;
 let lengthData;
 let subjectivityLabels;
 
-async function unpackData(movie){
+function unpackData(movie){
     name = movie.map(function(d){
         return d.Name
     });
@@ -30,8 +30,8 @@ async function unpackData(movie){
     // return [name, polarityLabels, lengthData, subjectivityLabels]
 }
 
-async function App() {
-    await d3.csv(data).then(unpackData)
+function App() {
+    d3.csv(data).then(unpackData)
     //test data
     // * fill later with an all gather function *
     
@@ -53,7 +53,7 @@ async function App() {
       //   moviePoster: "https://flxt.tmsimg.com/assets/p10951814_p_v8_af.jpg",
       // }
     ]
-    
+    console.log(movies)
   return (
 
     <div className="App">

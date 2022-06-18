@@ -51,13 +51,17 @@ sentiment_score = 0
 for (dirpath, dirnames, filenames) in os.walk(raw_data_path):
     for filename in filenames:
         word_count = 0
+        line_wordcount = []
+        line_polarity = []
+        line_subjectivity = []
         print(dirpath + filename)
         outname = filename.split("\n.txt")[0]
         with open(dirpath + filename, "r") as f:
             # out_path = "Sentiment_over_time/" + filename + "_sentiment.txt"
-            out_path = "Sentiment_CSV/" + outname + "_sentiment.csv"
+            out_path = "Sentiment_TEST/" + outname + "_sentiment.txt"
             with open(out_path, "w") as out:
-                out.write(f"Name,Polarity,Length,Subjectivity\n")
+                # out.write(f"Name,Polarity,Length,Subjectivity\n")
+
                 for line in f:
                     if len(line) > 100:
                         cleaned_line = ""
@@ -65,21 +69,35 @@ for (dirpath, dirnames, filenames) in os.walk(raw_data_path):
                             if word not in STOP_WORDS:
                                 cleaned_line += "\t" + word
                             word_count += 1
+                        line_polarity.append(
+                            str("{:.4f}".format(
+                                TextBlob(cleaned_line).sentiment.polarity)))
+                        line_wordcount.append(str(word_count))
+                        line_subjectivity.append(
+                            str("{:.4f}".format(
+                                TextBlob(
+                                    cleaned_line).sentiment.subjectivity)))
 
-                        line_polarity = str("{:.4f}".format(
-                            TextBlob(cleaned_line).sentiment.polarity))
-                        line_subjectivity = str("{:.4f}".format(
-                            TextBlob(cleaned_line).sentiment.subjectivity))
+                # write here
+                out.write(f"movieName: \"{outname}\",")
+                out.write(f"\npolarity: {line_polarity},")
+                out.write(f'\nlengthData: {line_wordcount},')
+                out.write(f'\nsubjectivty: {line_subjectivity},')
 
-                        out.write(
-                            f"{outname},{line_polarity},{str(word_count)},{line_subjectivity}\n"
-                        )
+                # line_polarity = str("{:.4f}".format(
+                #     TextBlob(cleaned_line).sentiment.polarity))
+                # line_subjectivity = str("{:.4f}".format(
+                #     TextBlob(cleaned_line).sentiment.subjectivity))
 
-                    # out.write(
-                    #     f"Interval Stop Word Count: {str(word_count)} \n")
-                    # out.write(
-                    #     f'Polarity: {str(TextBlob(cleaned_line).sentiment.polarity)} \n'
-                    # )
-                    # out.write(
-                    #     f'Subjectivity: {str(TextBlob(cleaned_line).sentiment.subjectivity)} \n'
-                    # )
+                # out.write(
+                #     f"{outname},{line_polarity},{str(word_count)},{line_subjectivity}\n"
+                # )
+
+                # out.write(
+                #     f"Interval Stop Word Count: {str(word_count)} \n")
+                # out.write(
+                #     f'Polarity: {str(TextBlob(cleaned_line).sentiment.polarity)} \n'
+                # )
+                # out.write(
+                #     f'Subjectivity: {str(TextBlob(cleaned_line).sentiment.subjectivity)} \n'
+                # )
