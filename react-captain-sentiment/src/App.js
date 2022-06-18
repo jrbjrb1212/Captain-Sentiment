@@ -13,7 +13,16 @@ function App() {
   return (
     <div className="App">
       <Header />  {/*  Header for webstie*/}
-      {/* <Cardstack movies={movies} /> { /* big card stack */}
+      <br />
+      <br />
+      <br />
+      <p className="center">Hello World!</p>
+      <br />
+      <br />
+      <br />
+
+      {/* <Cardstack movies={movies} /> 
+      <Footer /> */}
       <Footer />
     </div>
   );

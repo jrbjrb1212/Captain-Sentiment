@@ -23,19 +23,6 @@ body {
   border-radius: 5px;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  margin-top: 0px;
-  margin-right: 50px;
-  margin-left: 50px;
-  color: white;
-  background-color: black;
-  text-indent: 20px;
-}
-
 .btn {
   display: inline-block;
   background: #000;
@@ -156,19 +143,6 @@ ul {
   height: 350px;
 }
 
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  margin-top: 0px;
-  margin-right: 50px;
-  margin-left: 50px;
-  color: black;
-  text-indent: 20px;
-  border-style: solid;
-}
-
 .chart {
   position: relative;
   width: 50vw;
@@ -181,3 +155,229 @@ ul {
   justify-content: center;
   height: 100vh;
 } */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 30px;
+  color: inherit;
+  text-decoration: inherit;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.header {
+  margin-top: 20px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.header-top {
+  display: flex;
+  width: 100%;
+  height: 80px;
+}
+
+.header-top__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.header-logo {
+  color: inherit;
+  text-decoration: inherit;
+  font-family: RobotoThin;
+  font-size: 100px;
+}
+
+.header-top__navbar {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.header-top__seperator {
+  width: 100%;
+  border: none;
+  height: 2px;
+  margin-top: 2px;
+  background-color: black;
+}
+
+.header-top__navigation {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 55px;
+}
+
+.header-bottom {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.header-bottom__email {
+  margin-right: 55px;
+}
+
+.header-bottom__phone {
+  margin-right: 65px;
+}
+
+.header-bottom__bag {
+  position: absolute;
+  display: flex;
+}
+
+.header-bottom__bag-icon {
+  position: relative;
+  display: flex;
+  left: -5px;
+  width: 30px;
+  height: 30px;
+}
+
+.header-bottom__bag-count {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: RobotoThin;
+  right: 0px;
+  top: -5px;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 10px;
+  color: white;
+}
+
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("./fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "RobotoThin";
+  src: url("./fonts/Roboto-Thin.ttf");
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.footer-social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer-social-media__icon {
+  margin: 0px 4px;
+  width: 25px;
+  height: 25px;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-info-left,
+.footer-info-center,
+.footer-info-right {
+  font-size: x-small;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 30%;
+}
+
+.footer-info__name,
+.footer-info__email,
+.footer-info__number {
+  margin-bottom: 10px;
+}
+
+.footer-info__name,
+.footer-info__returns {
+  text-align: start;
+}
+
+.footer-info__email,
+.footer-info__terms {
+  text-align: center;
+}
+
+.footer-info__number,
+.footer-info__contact {
+  text-align: end;
+}
+
+.footer-date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-seperator {
+  flex-grow: 1;
+  border: none;
+  height: 1px;
+  background-color: black;
+  width: 100%;
+}
+
+.footer-name {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-bottom__name {
+  text-transform: uppercase;
+  font-family: RobotoBold;
+  font-size: large;
+  margin: 0px 20px;
+}
+
+.center {
+  text-align: center;
+  font-size: x-large;
+}
+
+.footer-logo {
+  text-align-last: center;
+  color: inherit;
+  text-decoration: inherit;
+  font-family: RobotoThin;
+  font-size: 25px;
+}
+
+.navbar-footer-item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 0px;
+  color: inherit;
+  text-decoration: inherit;
+  text-transform: uppercase;
+  outline: none;
+  font-size: smaller;
+}
