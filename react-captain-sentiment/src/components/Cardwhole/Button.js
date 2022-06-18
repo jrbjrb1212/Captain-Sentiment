@@ -1,8 +1,8 @@
-const Button = () => {
+const Button = ({ buttonName }) => {
     return (
-        <div>
-            
-        </div>
+        <>
+            {buttonName}  
+        </>
     )
 }
 

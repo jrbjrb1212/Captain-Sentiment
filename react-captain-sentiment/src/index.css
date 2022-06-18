@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 * {
   box-sizing: border-box;
@@ -141,12 +138,6 @@ ul {
   margin-top: 10px;
   width: 150px;
   height: 350px;
-}
-
-.chart {
-  position: relative;
-  width: 50vw;
-  height: 50vh;
 }
 
 /* body {
@@ -382,9 +373,67 @@ ul {
   font-size: smaller;
 }
 
+.card-body {
+  border-style: solid;
+  border-color: black;
+  height: 450px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .card-left-outline {
-  border: black;
+  border-style: solid;
+  border-color: black;
+  width: 30%;
+  margin: 2px;
+  float: left;
 }
 
 .card-right-outline {
+  border-style: solid;
+  border-color: black;
+  width: 68%;
+  margin-right: 2px;
+  margin-top: 2px;
+  padding: 1%;
+  float: right;
+}
+
+.movie-title {
+  border-style: solid;
+  border-color: black;
+  margin: 2px;
+  text-align: center;
+}
+
+.movie-poster {
+  border-style: solid;
+  border-color: black;
+  margin: 2px;
+  image-rendering: optimizeQuality;
+  width: 98%;
+  margin: 2px;
+}
+
+.chart {
+  border-style: solid;
+  border-color: black;
+  margin: 2px;
+  align-items: center;
+  text-align: center;
+  image-rendering: optimizeQuality;
+  height: 300px;
+}
+
+.button {
+  border-style: solid;
+  border-color: black;
+  margin-top: 10px;
+  margin-left: 2px;
+  margin-right: 4%;
+  margin-bottom: 2px;
+  width: 27%;
+  text-align: center;
+  align-items: center;
+  float: right;
 }

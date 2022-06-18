@@ -1,5 +1,6 @@
 import Button from "./Button"
 import Poster from "./Poster"
+import Poster_Title from "./Poster_Title"
 import Chart from "./Chart"
 
 const Card = () => {
@@ -10,20 +11,34 @@ const Card = () => {
     return (
         <>
             {/* Left side of Card */}
-            <section >
-                <Poster />
-            </section>,
+            <section className="card-left-outline ">
+                <section className="movie-title">
+                    <Poster_Title />
+                </section>
+                <section className="movie-poster">
+                    <Poster />
+                </section>
+            </section>
 
             {/* Right side of Card */}
-            <section>
-                <section>
+            <section className="card-right-outline">
+                <section className="chart">
                     <Chart />
                 </section>
                 <section>
-                    <Button />
+                    <section className="button">
+                        <Button buttonName="Next"/>
+                    </section>
+                    <section className="button">
+                        <Button buttonName="Subjectivity"/>
+                    </section>
+                    <section className="button">
+                        <Button buttonName="Polarity"/>
+                    </section>
+                    
                 </section>
         
-            </section>,  
+            </section>
         </>
     )
 }

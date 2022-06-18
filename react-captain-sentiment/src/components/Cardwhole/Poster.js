@@ -1,8 +1,8 @@
 const Poster = () => {
     return (
-        <div>
-            
-        </div>
+        <>
+            <p>Here is the poster</p> 
+        </>
     )
 }
 

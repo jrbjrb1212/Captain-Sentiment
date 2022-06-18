@@ -1,8 +1,8 @@
 const Chart = () => {
     return (
-        <div>
-            
-        </div>
+        <>
+           <p>Chart Goes Here</p> 
+        </>
     )
 }
 

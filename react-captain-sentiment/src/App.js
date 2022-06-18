@@ -17,13 +17,16 @@ function App() {
       <br />
       <br />
       {/* Cardstack here */}
-      <Card />
+      <section className="card-body">
+        <Card/>
+      </section>
+      
       
       <br />
       <br />
       <br />
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
