@@ -47,9 +47,11 @@ STOP_WORDS = [
 ]
 
 sentiment_score = 0
+id = 0
 
 for (dirpath, dirnames, filenames) in os.walk(raw_data_path):
     for filename in filenames:
+        id += 1
         word_count = 0
         line_wordcount = []
         line_polarity = []
@@ -58,8 +60,9 @@ for (dirpath, dirnames, filenames) in os.walk(raw_data_path):
         outname = filename.split("\n.txt")[0]
         with open(dirpath + filename, "r") as f:
             # out_path = "Sentiment_over_time/" + filename + "_sentiment.txt"
-            out_path = "Sentiment_TEST/" + outname + "_sentiment.txt"
-            with open(out_path, "w") as out:
+            # out_path = "Sentiment_TEST/" + outname + "_sentiment.txt"
+            out_path = "jumble.txt"
+            with open(out_path, "a") as out:
                 # out.write(f"Name,Polarity,Length,Subjectivity\n")
 
                 for line in f:
@@ -79,10 +82,30 @@ for (dirpath, dirnames, filenames) in os.walk(raw_data_path):
                                     cleaned_line).sentiment.subjectivity)))
 
                 # write here
-                out.write(f"movieName: \"{outname}\",")
-                out.write(f"\npolarity: {line_polarity},")
-                out.write(f'\nlengthData: {line_wordcount},')
-                out.write(f'\nsubjectivty: {line_subjectivity},')
+                temp = outname.split("_")
+                print_name = ""
+                for word in temp:
+                    print_name += word + " "
+
+                # split year and name
+                year = ""
+                name = ""
+                split = print_name.split()
+                for word in split:
+                    if word == split[-1]:
+                        year += f'{word}'
+                    else:
+                        name += f'{word} '
+
+                out.write("{\n")
+                out.write(f"\tid: {id},")
+                out.write(f"\n\tmovieName: \"{name[:-1]}\",")
+                out.write(f"\n\tmovieYear: \"{year}\",")
+                out.write(f"\n\tpolarity: {line_polarity},")
+                out.write(f'\n\tlengthData: {line_wordcount},')
+                out.write(f'\n\tsubjectivty: {line_subjectivity},')
+                out.write(f"\n\tmoviePoster: \"\",\n")
+                out.write("},\n")
 
                 # line_polarity = str("{:.4f}".format(
                 #     TextBlob(cleaned_line).sentiment.polarity))
