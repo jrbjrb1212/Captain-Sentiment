@@ -2,7 +2,7 @@ import React from 'react';
 
 // start with header work down from there
 import Header from "./components/Header"
-import Cardstack from "./components/Cardstack"
+import Card from "./components/Cardwhole/Card"
 import Footer from "./components/Footer"
 const data = require("./components/Data.js");
 console.log(data.movieData)
@@ -16,13 +16,13 @@ function App() {
       <br />
       <br />
       <br />
-      <p className="center">Hello World!</p>
+      {/* Cardstack here */}
+      <Card />
+      
       <br />
       <br />
       <br />
 
-      {/* <Cardstack movies={movies} /> 
-      <Footer /> */}
       <Footer />
     </div>
   );

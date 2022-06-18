@@ -381,3 +381,10 @@ ul {
   outline: none;
   font-size: smaller;
 }
+
+.card-left-outline {
+  border: black;
+}
+
+.card-right-outline {
+}
