@@ -1,7 +1,7 @@
 function makeChart(movie) {
     const ctx = document.getElementById('chart').getContext("2d");
 
-    let delayed;
+    let delayed = true;
     //Gradient Fill
     let gradient = ctx.createLinearGradient(0,0,0,400);
     gradient.addColorStop(0,'rgba(58,123,213,1');

@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Poster_Title = () => {
+const Poster_Title = ({ movieName }) => {
     return (
         <>
-            <button className="button-35" role="button">Movie Title</button>
+            <button className="button-35" role="button">{movieName}</button>
         </>
     )
 }
