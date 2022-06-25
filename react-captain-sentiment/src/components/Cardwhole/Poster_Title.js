@@ -3,7 +3,7 @@ import React from 'react'
 const Poster_Title = () => {
     return (
         <>
-            <p>Movie Title</p>
+            <button className="button-35" role="button">Movie Title</button>
         </>
     )
 }

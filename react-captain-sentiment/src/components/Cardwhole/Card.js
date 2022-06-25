@@ -7,7 +7,6 @@ const Card = () => {
     // const movieTitle = movie.map( function (movie) {
     //     return movie.movieName;
     // });
-
     return (
         <>
             {/* Left side of Card */}
@@ -15,7 +14,7 @@ const Card = () => {
                 <section className="movie-title">
                     <Poster_Title />
                 </section>
-                <section className="movie-poster">
+                <section className="movie-poster-outline">
                     <Poster />
                 </section>
             </section>

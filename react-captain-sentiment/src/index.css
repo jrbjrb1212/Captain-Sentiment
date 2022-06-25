@@ -122,30 +122,11 @@ ul {
 .movie-name {
   border-style: solid;
   margin: auto;
-  border-collapse: collapse;
-  border-style: blue;
   margin-left: 25px;
   margin-top: 40px;
   width: 150px;
   text-align: center;
 }
-
-.movie-poster {
-  border-style: solid;
-  border-style: black;
-  padding: 0%;
-  margin-left: 25px;
-  margin-top: 10px;
-  width: 150px;
-  height: 350px;
-}
-
-/* body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-} */
 
 .navbar {
   display: flex;
@@ -393,6 +374,7 @@ ul {
   border-style: solid;
   border-color: black;
   width: 68%;
+  height: auto;
   margin-right: 2px;
   margin-top: 2px;
   padding: 1%;
@@ -400,21 +382,18 @@ ul {
 }
 
 .movie-title {
-  border-style: solid;
-  border-color: black;
   margin: 2px;
   text-align: center;
 }
 
-.movie-poster {
-  border-style: solid;
-  border-color: black;
-  margin: 2px;
+.movie-poster-outline {
+  padding: 0%;
+  margin: 10px;
   image-rendering: optimizeQuality;
   width: 98%;
+  height: auto;
   margin: 2px;
 }
-
 .chart {
   border-style: solid;
   border-color: black;
@@ -425,8 +404,6 @@ ul {
 }
 
 .button {
-  border-style: solid;
-  border-color: black;
   margin-top: 10px;
   margin-left: 2px;
   margin-right: 4%;
@@ -435,4 +412,89 @@ ul {
   text-align: center;
   align-items: center;
   float: right;
+}
+
+/* CSS */
+.button-52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: "";
+  background-color: #ffcccb;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+
+/* CSS */
+.button-35 {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.1) 0 6px 20px;
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.button-35:hover {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+
+.movie-poster {
+  aspect-ratio: initial;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3px;
+  width: auto;
+  height: 380px;
+  align-self: center;
+  image-rendering: optimizeQuality;
 }
