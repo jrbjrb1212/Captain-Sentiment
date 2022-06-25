@@ -4,7 +4,6 @@ import { Chart as ChartJS } from "chart.js/auto";
 
 function Chart_Test({ movie }) {
 
-  let delayed;
   const data = {
     labels: movie.lengthData,
     datasets: [
