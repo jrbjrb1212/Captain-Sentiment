@@ -17,7 +17,7 @@ const Card = ({ movie }) => {
                     <Poster_Title movieName={movie.movieName}/>
                 </section>
                 <section className="movie-poster-outline">
-                    <Poster movieLink={movie.moviePoster} movieName={movie.movieName}/>
+                    <Poster movieName={movie.movieName}/>
                 </section>
             </section>
 
@@ -25,7 +25,7 @@ const Card = ({ movie }) => {
             <section className="card-right-outline">
                 <section className="chart_outline">
                     <div className="chart">
-                        <Chart_Test />
+                        <Chart_Test movie={movie}/>
                     </div>
                     
                 </section>

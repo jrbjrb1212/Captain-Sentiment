@@ -4,7 +4,7 @@ const Header_Nav = () => {
             <a href="/" className="navbar-item">Home</a>
             <a href="/about" className="navbar-item">Motivation</a>
             <a href="/portfolio" className="navbar-item">Interpretation</a>
-            <a href="/contact" className="navbar-item">Contact</a>
+            <a href="/contact" className="navbar-item">GitHub</a>
         </section>
     )
 }

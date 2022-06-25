@@ -385,6 +385,7 @@ ul {
 .movie-title {
   margin: 2px;
   text-align: center;
+  font-family: RobotoThin;
 }
 
 .movie-poster-outline {
@@ -478,8 +479,8 @@ ul {
   cursor: pointer;
   display: inline-flex;
   flex: 1 1 auto;
-  font-family: Inter, sans-serif;
-  font-size: 1.2rem;
+  font-family: RobotoThin;
+  font-size: 1.8rem;
   font-weight: 700;
   justify-content: center;
   line-height: 1;

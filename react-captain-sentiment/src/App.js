@@ -9,7 +9,7 @@ console.log(data.movieData)
 
 
 function App() {
-  let test_movie = data.movieData[0]
+  let test_movie = data.movieData[5]
   console.log(test_movie)
     
   return (

@@ -2,17 +2,27 @@ import React from "react";
 import { Line } from "react-chartjs-2";
 import { Chart as ChartJS } from "chart.js/auto";
 
-function Chart_Test() {
+function Chart_Test({ movie }) {
 
   let delayed;
   const data = {
-    labels: [1,2,3,4,5,1,2,3,4,5],
+    labels: movie.lengthData,
     datasets: [
       {
-        label: "Users Gained",
-        data: [100,200,300,400,100,100,200,300,400,100],
+        label: "Polarity",
+        data: movie.polarity,
         fill: false,
         display: true,
+        backgroundColor: "black",
+        borderColor: "grey",
+        pointBackgroundColor: "white",
+        tension: 0.35,
+      },
+      {
+        label: "Subjectivity",
+        data: movie.subjectivty,
+        fill: false,
+        display: false,
         backgroundColor: "black",
         borderColor: "grey",
         pointBackgroundColor: "white",
