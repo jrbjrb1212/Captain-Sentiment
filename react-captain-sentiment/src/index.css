@@ -362,11 +362,10 @@ ul {
   height: 600px;
   margin-left: 10px;
   margin-right: 10px;
+  background-color: grey;
 }
 
 .card-left-outline {
-  border-style: solid;
-  border-color: black;
   width: 30%;
   height: 98%;
   margin: 2px;
@@ -374,8 +373,6 @@ ul {
 }
 
 .card-right-outline {
-  border-style: solid;
-  border-color: black;
   width: 68%;
   height: auto;
   margin-right: 2px;
@@ -412,13 +409,17 @@ ul {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
 
+.movie-poster:hover {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+
 .chart_outline {
-  border-style: solid;
-  border-color: black;
+  border-radius: 25px;
   margin: 2px;
   align-items: center;
   text-align: center;
   height: 490px;
+  background-color: #c0c0c0;
 }
 
 .button {
@@ -442,7 +443,7 @@ ul {
   border: 1px solid black;
   cursor: pointer;
   position: relative;
-  background-color: rgba(0, 0, 0, 0);
+  border-radius: 10px;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -458,6 +459,11 @@ ul {
   top: 7px;
   left: 7px;
   transition: 0.2s;
+}
+
+.button-52:hover {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+  background-color: #ffcccb;
 }
 
 .button-52:hover:after {
@@ -521,7 +527,7 @@ body {
 
 .back-top {
   position: relative;
-  height: 140px;
+  height: 200px;
   background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5298bac0-b8bf-4c80-af67-725c1272dbb0/defibp5-8019b091-dae8-426d-8276-7b6d15afcce8.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUyOThiYWMwLWI4YmYtNGM4MC1hZjY3LTcyNWMxMjcyZGJiMFwvZGVmaWJwNS04MDE5YjA5MS1kYWU4LTQyNmQtODI3Ni03YjZkMTVhZmNjZTguanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.pojNP43h1WC_XSz5oyqkpLbNmCChKMYG38UqYi8b44o);
   width: 100%;
   border-bottom-left-radius: 70% 60px;
@@ -530,7 +536,7 @@ body {
 
 .back-bottom {
   position: static;
-  height: 100px;
+  height: 150px;
   background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5298bac0-b8bf-4c80-af67-725c1272dbb0/defibp5-8019b091-dae8-426d-8276-7b6d15afcce8.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUyOThiYWMwLWI4YmYtNGM4MC1hZjY3LTcyNWMxMjcyZGJiMFwvZGVmaWJwNS04MDE5YjA5MS1kYWU4LTQyNmQtODI3Ni03YjZkMTVhZmNjZTguanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.pojNP43h1WC_XSz5oyqkpLbNmCChKMYG38UqYi8b44o);
   background-position: bottom;
   width: 100%;

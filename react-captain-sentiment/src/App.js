@@ -29,7 +29,7 @@ function App() {
     }
     
   return (
-    <section>
+    <section className="gradient">
       <section className="header-top-margin"/>
       <section className="header-container">
         <Header />  {/*  Header for webstie*/}
@@ -47,7 +47,7 @@ function App() {
       <section>
         <Footer />
       </section>
-      
+
     </section>
   );
 }
