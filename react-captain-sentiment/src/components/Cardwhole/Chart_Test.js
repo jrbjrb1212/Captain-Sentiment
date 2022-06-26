@@ -11,7 +11,7 @@ function Chart_Test({ movie }) {
         label: "Polarity",
         data: movie.polarity,
         fill: false,
-        display: true,
+        hidden: movie.polarityToggle,
         backgroundColor: "black",
         borderColor: "grey",
         pointBackgroundColor: "white",
@@ -21,7 +21,7 @@ function Chart_Test({ movie }) {
         label: "Subjectivity",
         data: movie.subjectivty,
         fill: false,
-        display: false,
+        hidden: movie.subjectivtyToggle,
         backgroundColor: "black",
         borderColor: "grey",
         pointBackgroundColor: "white",
@@ -44,7 +44,6 @@ function Chart_Test({ movie }) {
                 to: 5,
                 loop: true
               }
-                
             },
             scales: {
                 x: {

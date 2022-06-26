@@ -1,7 +1,7 @@
-const Polarity_Button = ({ buttonName }) => {
+const Polarity_Button = ({ movie, buttonName, onPolToggle }) => {
     return (
         <>
-            <button className="button-52" role="button">{buttonName}</button>
+            <button className="button-52" role="button" onClick={() => onPolToggle(movie.id)}>{buttonName}</button>
         </>
     )
 

@@ -1,8 +1,8 @@
-const Subjectivity_Button = ({ buttonName }) => {
+const Subjectivity_Button = ({ movie, buttonName, onSubToggle }) => {
     return (
-        <>
-            <button className="button-52" role="button">{buttonName}</button>
-        </>
+        <div>
+            <button className="button-52" role="button" onClick={() => onSubToggle(movie.id)}>{buttonName}</button>
+        </div>
     )
 
     

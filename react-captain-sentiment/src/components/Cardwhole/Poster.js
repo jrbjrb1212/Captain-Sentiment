@@ -62,7 +62,7 @@ const Poster = ({ movieLink, movieName }) => {
     contacts.set('Shang-ChiandtheLegendoftheTenRings', ShangChi)
     contacts.set('Spider-ManFarfromHome', SpiderManFarFromHome)
     contacts.set('Spider-ManHomecoming', SpiderManHomecoming)
-    contacts.set('SpiderManNoWayHome', SpiderManNoWayHome)
+    contacts.set('Spider-ManNoWayHome', SpiderManNoWayHome)
     contacts.set('TheAvengers', TheAvengers)
     contacts.set('Thor', Thor)
     contacts.set('ThorRagnarok', ThorRagnarok)

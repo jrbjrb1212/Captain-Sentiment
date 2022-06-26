@@ -7,33 +7,20 @@ import Next_Button from "./Next_Button";
 import Subjectivity_Button from "./Subjectivity_Button";
 import Polarity_Button from "./Polarity_Button";
 
-const Card = ({ movie }) => {
+const Card = ({ movies, onSubToggle, onPolToggle }) => {
     // const movieTitle = movie.map( function (movie) {
     //     return movie.movieName;
     // });
-
-    const toggleSubjectivity = (id) => {
-        console.log(movie.id)
-    }
-
-    const togglePolarity = (id) => {
-        console.log(movie.id)
-    }
-
-    const toggleNext = (id) => {
-        console.log(movie.id)
-    }
-
 
     return (
         <>
             {/* Left side of Card */}
             <section className="card-left-outline ">
                 <section className="movie-title">
-                    <Poster_Title movieName={movie.movieName}/>
+                    <Poster_Title movieName={movies[0].movieName}/>
                 </section>
                 <section className="movie-poster-outline">
-                    <Poster movieName={movie.movieName}/>
+                    <Poster movieName={movies[0].movieName}/>
                 </section>
             </section>
 
@@ -41,19 +28,19 @@ const Card = ({ movie }) => {
             <section className="card-right-outline">
                 <section className="chart_outline">
                     <div className="chart">
-                        <Chart_Test movie={movie}/>
+                        <Chart_Test movie={movies[0]}/>
                     </div>
                     
                 </section>
                 <section>
                     <section className="button">
-                        <Next_Button buttonName="Next" onToggle={toggleNext}/>
+                        <Next_Button buttonName="Next" />
                     </section>
                     <section className="button">
-                        <Subjectivity_Button buttonName="Subjectivity" onToggle={toggleSubjectivity}/>
+                        <Subjectivity_Button movie={movies[0]} buttonName="Subjectivity" onSubToggle={onSubToggle}/>
                     </section>
                     <section className="button">
-                        <Polarity_Button buttonName="Polarity" onToggle={togglePolarity}/>
+                        <Polarity_Button movie={movies[0]} buttonName="Polarity" onPolToggle={onPolToggle} />
                     </section>
                     
                 </section>
