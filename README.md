@@ -11,9 +11,9 @@ I present Captain Sentiment, an natural langauge analysis of the MCU movies usin
 
 
 ## To Locally Use The Website and/or Code
-- Clone this repository
-- Run npm install via the command line
-- Run npm start
+**- Clone this repository**
+**- Run npm install via the command line**
+**- Run npm start**
 
 To streamline the process, for viewers to use this analysis. I have embedded the data locally into this repositoiry. All scripts used to webscrape, collect, clean, and manipulate the raw data can be found in /data. This cleaned data was used with the React.js framework to create the interactive UI you see above.
 
