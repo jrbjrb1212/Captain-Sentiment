@@ -8,7 +8,6 @@ import Subjectivity_Button from "./Subjectivity_Button";
 import Polarity_Button from "./Polarity_Button";
 
 const Card = ({ movies, movieID, onSubToggle, onPolToggle, onNext }) => {
-    console.log(movieID)
     // const movieTitle = movie.map( function (movie) {
     //     return movie.movieName;
     // });

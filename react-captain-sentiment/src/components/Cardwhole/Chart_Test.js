@@ -1,6 +1,5 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
-import { Chart as ChartJS } from "chart.js/auto";
 
 function Chart_Test({ movie }) {
 
@@ -16,6 +15,8 @@ function Chart_Test({ movie }) {
         borderColor: "grey",
         pointBackgroundColor: "white",
         tension: 0.35,
+        fill: true,
+        backgroundColor: 'red',
       },
       {
         label: "Subjectivity",
@@ -23,53 +24,60 @@ function Chart_Test({ movie }) {
         fill: false,
         hidden: movie.subjectivtyToggle,
         backgroundColor: "black",
-        borderColor: "grey",
+        borderColor: movie.primaryColor,
         pointBackgroundColor: "white",
         tension: 0.35,
+        fill: true,
+        backgroundColor: movie.secondaryColor,
       },
     ],
   };
 
   const options = {
     responsive: true,
-            maintainAspectRatio: false,
-            radius: 5,
-            hitRadius: 30,
-            hoverRadius: 12,
-            animations: {
-              borderWidth: {
-                duration: 2000,
-                easing: 'linear',
-                from: 2,
-                to: 5,
-                loop: true
-              }
+    maintainAspectRatio: false,
+    borderColor: movie.secondaryColor,
+    radius: 5,
+    hitRadius: 30,
+    hoverRadius: 12,
+    animations: {
+      borderWidth: {
+        duration: 2000,
+        easing: 'linear',
+        from: 2,
+        to: 5,
+        loop: true
+      }
+    },
+    title: {
+      display: true,
+      text: movie.movieName + " " + movie.movieYear
+    },
+    scales: {
+        x: {
+            title: {
+                display: true,
+                text: "Course of the Movie",
+                color: "black",
             },
-            scales: {
-                x: {
-                    title: {
-                        display: true,
-                        text: "Course of the Movie",
-                        color: "black",
-                    },
-                    ticks: {
-                        display: false,
-                        color: "black",
-                    }
-                },
-                y: {
-                    beginAtZero:true,
-                    title: {
-                        display: true,
-                        text: "Polarity",
-                        color: "black"
-                    },
-                    ticks: {
-                        display: true,
-                        color: 'black',
-                    }
-                }
+            ticks: {
+                display: false,
+                color: "black",
+            }
+        },
+        y: {
+            beginAtZero:true,
+            title: {
+                display: true,
+                text: "Polarity",
+                color: "black"
             },
+            ticks: {
+                display: true,
+                color: 'black',
+            }
+        }
+    },
   }
 
   return (
@@ -78,5 +86,3 @@ function Chart_Test({ movie }) {
 
 }
 export default Chart_Test
-
-

@@ -23,7 +23,7 @@ return (
 
         <section className="footer-info-right">
             <section className="footer-info__number">
-            <a href="/contact" className="navbar-footer-item">Contact</a>
+            <a href="/contact" className="navbar-footer-item">GitHub</a>
             </section>
         </section>
     </section>

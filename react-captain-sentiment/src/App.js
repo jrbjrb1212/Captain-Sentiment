@@ -12,7 +12,6 @@ let currMovieID = 0
 function App() {
 
   const [movies, setMovies] = useState(data.movieData)
-  console.log(movies)
 
   const toggleSubjectivity = (id) => {
       // setMovies(movies.map((movie) => movie.id === id ? console.log(movie.id) : movie))
@@ -30,23 +29,26 @@ function App() {
     }
     
   return (
-    <div className="App">
-      <Header />  {/*  Header for webstie*/}
+    <section>
+      <section className="header-top-margin"/>
+      <section className="header-container">
+        <Header />  {/*  Header for webstie*/}
+      </section>
+      <section className="header-bottom-margin"/>
+      <section className="back-top"/>
       <br />
-      <br />
-      <br />
+      
       {/* Cardstack here */}
       <section className="card-body">
         <Card movies={movies} movieID={currMovieID} onSubToggle={toggleSubjectivity} onPolToggle={togglePolarity} onNext={toggleNext}/>
       </section>
+      <br className="gradient"/>
+      <section className="back-bottom"/>
+      <section>
+        <Footer />
+      </section>
       
-      
-      <br />
-      <br />
-      <br />
-
-      {/* <Footer /> */}
-    </div>
+    </section>
   );
 }
 

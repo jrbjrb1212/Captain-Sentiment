@@ -99,24 +99,9 @@ body {
   height: 20px;
 }
 
-footer {
-  margin-top: 30px;
-  text-align: center;
-}
-
 ul {
   list-style-type: none;
   text-indent: -200px;
-}
-
-.cardstack-body {
-  border-style: double;
-  border-color: black;
-  margin-bottom: 20px;
-  margin-top: 0px;
-  margin-right: 50px;
-  margin-left: 50px;
-  height: 500px;
 }
 
 .movie-name {
@@ -144,11 +129,26 @@ ul {
   outline: none;
 }
 
+.header-top-margin {
+  height: 20px;
+  width: 100%;
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+
+.header-bottom-margin {
+  height: 20px;
+  width: 100%;
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+
 .header {
-  margin-top: 20px;
   display: flex;
   flex: 1;
   flex-direction: column;
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
 }
 
 .header-top {
@@ -167,6 +167,7 @@ ul {
 .header-logo {
   color: inherit;
   text-decoration: inherit;
+  margin-left: 25px;
   font-family: RobotoThin;
   font-size: 100px;
 }
@@ -248,10 +249,13 @@ ul {
 }
 
 .footer {
+  margin-top: 5px;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
   font-weight: bold;
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
 }
 
 .footer-social-media {
@@ -278,7 +282,6 @@ ul {
   font-size: x-small;
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
   width: 30%;
 }
 
@@ -312,8 +315,6 @@ ul {
 .footer-seperator {
   flex-grow: 1;
   border: none;
-  height: 1px;
-  background-color: black;
   width: 100%;
 }
 
@@ -355,6 +356,7 @@ ul {
 }
 
 .card-body {
+  opacity: 1;
   border-style: solid;
   border-color: black;
   height: 600px;
@@ -399,7 +401,6 @@ ul {
 
 .movie-poster {
   aspect-ratio: initial;
-  responsive: true;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -408,6 +409,7 @@ ul {
   height: 500px;
   align-self: center;
   image-rendering: optimizeQuality;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
 
 .chart_outline {
@@ -481,7 +483,7 @@ ul {
   display: inline-flex;
   flex: 1 1 auto;
   font-family: RobotoThin;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-weight: 700;
   justify-content: center;
   line-height: 1;
@@ -507,4 +509,36 @@ canvas {
   width: 100% !important;
   height: 450px !important;
   padding: 5px;
+}
+
+.app {
+}
+
+body {
+  margin: 0;
+  background: white;
+}
+
+.back-top {
+  position: relative;
+  height: 140px;
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5298bac0-b8bf-4c80-af67-725c1272dbb0/defibp5-8019b091-dae8-426d-8276-7b6d15afcce8.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUyOThiYWMwLWI4YmYtNGM4MC1hZjY3LTcyNWMxMjcyZGJiMFwvZGVmaWJwNS04MDE5YjA5MS1kYWU4LTQyNmQtODI3Ni03YjZkMTVhZmNjZTguanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.pojNP43h1WC_XSz5oyqkpLbNmCChKMYG38UqYi8b44o);
+  width: 100%;
+  border-bottom-left-radius: 70% 60px;
+  border-bottom-right-radius: 30% 10px;
+}
+
+.back-bottom {
+  position: static;
+  height: 100px;
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5298bac0-b8bf-4c80-af67-725c1272dbb0/defibp5-8019b091-dae8-426d-8276-7b6d15afcce8.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUyOThiYWMwLWI4YmYtNGM4MC1hZjY3LTcyNWMxMjcyZGJiMFwvZGVmaWJwNS04MDE5YjA5MS1kYWU4LTQyNmQtODI3Ni03YjZkMTVhZmNjZTguanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.pojNP43h1WC_XSz5oyqkpLbNmCChKMYG38UqYi8b44o);
+  background-position: bottom;
+  width: 100%;
+  border-top-right-radius: 70% 60px;
+  border-top-left-radius: 30% 10px;
+}
+
+.gradient {
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
 }
