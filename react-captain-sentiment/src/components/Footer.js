@@ -10,21 +10,21 @@ return (
         </section>
     <section className="footer-info">
         <section className="footer-info-left">
-            <section className="footer-info__name">
+            {/* <section className="footer-info__name">
                 <a href="/about" className="navbar-footer-item">Motivation</a>
-            </section>      
+            </section>       */}
         </section>
 
         <section className="footer-info-center">
             <section className="footer-info__email">
-                <a href="/portfolio" className="navbar-footer-item">Interpretation</a>
+                <a href="https://github.com/jrbjrb1212/Captain-Sentiment" className="navbar-footer-item">Github</a>
             </section>
         </section>
 
         <section className="footer-info-right">
-            <section className="footer-info__number">
+            {/* <section className="footer-info__number">
             <a href="/contact" className="navbar-footer-item">GitHub</a>
-            </section>
+            </section> */}
         </section>
     </section>
     <hr className="footer-seperator" />

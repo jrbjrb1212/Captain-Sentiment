@@ -339,7 +339,7 @@ ul {
   text-align-last: center;
   color: inherit;
   text-decoration: inherit;
-  font-family: RobotoThin;
+  font-family: RobotoRegular;
   font-size: 25px;
 }
 
@@ -363,6 +363,8 @@ ul {
   margin-left: 10px;
   margin-right: 10px;
   background-color: grey;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 15px;
 }
 
 .card-left-outline {
@@ -383,6 +385,7 @@ ul {
 
 .movie-title {
   margin: 2px;
+  margin-top: 3%;
   text-align: center;
   font-family: RobotoThin;
 }
@@ -394,6 +397,7 @@ ul {
   width: 98%;
   height: auto;
   margin: 2px;
+  margin-top: 4%;
 }
 
 .movie-poster {
@@ -406,15 +410,16 @@ ul {
   height: 500px;
   align-self: center;
   image-rendering: optimizeQuality;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .movie-poster:hover {
-  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 25px;
 }
 
 .chart_outline {
   border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin: 2px;
   align-items: center;
   text-align: center;
@@ -436,7 +441,8 @@ ul {
 /* CSS */
 .button-52 {
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 500;
+  font-family: RobotoRegular;
   letter-spacing: 1px;
   padding: 13px 20px 13px;
   outline: 0;
@@ -488,9 +494,9 @@ ul {
   cursor: pointer;
   display: inline-flex;
   flex: 1 1 auto;
-  font-family: RobotoThin;
-  font-size: 1.3rem;
-  font-weight: 700;
+  font-family: RobotoRegular;
+  font-size: 1.1rem;
+  font-weight: 1200;
   justify-content: center;
   line-height: 1;
   margin: 0;

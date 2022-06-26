@@ -41,8 +41,8 @@ function Chart_Test({ movie }) {
       borderWidth: {
         duration: 2000,
         easing: 'linear',
-        from: 2,
-        to: 6.5,
+        from: 3,
+        to: 6,
         loop: true
       },
       tension: {

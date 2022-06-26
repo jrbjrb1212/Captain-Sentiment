@@ -37,6 +37,7 @@ const Poster = ({ movieLink, movieName }) => {
         stringBuild += stringSplit[i]
     }
 
+
     const contacts = new Map()
     contacts.set('Ant-Man', AntMan)
     contacts.set('Ant-ManandtheWasp', AntManAndTheWasp)
@@ -45,14 +46,14 @@ const Poster = ({ movieLink, movieName }) => {
     contacts.set('BlackPanther', BlackPanther)
     contacts.set('BlackWidow', BlackWidow)
     contacts.set('CaptainAmerica:TheFirstAvenger', CaptainAmerica)
-    contacts.set('CaptainAmericaTheWinterSoilder', CaptainAmericaTheWinterSoilder)
+    contacts.set('CaptainAmericaTheWinterSoldier', CaptainAmericaTheWinterSoilder)
     contacts.set('CaptainAmericaCivilWar', CaptainAmericaCivilWar)
     contacts.set('CaptainMarvel', CaptainMarvel)
     contacts.set('DoctorStrange', DoctorStrange)
     contacts.set('DoctorStrangeintheMultiverseofMadness', DoctorStrangeintheMultiverseOfMadness)
     contacts.set('Eternals', Eternals)
     contacts.set('GuardiansoftheGalaxy', GuardiansoftheGalaxy)
-    contacts.set('GuardiansoftheGalaxyVol.2"', GuardiansoftheGalaxy2)
+    contacts.set('GuardiansoftheGalaxyVol.2', GuardiansoftheGalaxy2)
     contacts.set('AvengersInfinityWar', InfinityWar)
     contacts.set('IronMan', IronMan)
     contacts.set('IronMan2', IronMan2)

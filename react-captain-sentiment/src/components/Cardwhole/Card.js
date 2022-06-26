@@ -1,4 +1,3 @@
-import Button from "./Button"
 import Poster from "./Poster"
 import Poster_Title from "./Poster_Title"
 import Chart_Test from "./Chart_Test"
@@ -7,17 +6,18 @@ import Next_Button from "./Next_Button";
 import Subjectivity_Button from "./Subjectivity_Button";
 import Polarity_Button from "./Polarity_Button";
 
-const Card = ({ movies, movieID, onSubToggle, onPolToggle, onNext }) => {
+const Card = ({ movies, movieID, onSubToggle, onPolToggle, onNext, toggleSelect }) => {
     // const movieTitle = movie.map( function (movie) {
     //     return movie.movieName;
     // });
+    console.log(movies)
 
     return (
         <>
             {/* Left side of Card */}
             <section className="card-left-outline ">
                 <section className="movie-title">
-                    <Poster_Title movieName={movies[movieID].movieName}/>
+                    <Poster_Title movie={movies[movieID]} movieName={movies[movieID].movieName} toggleSelect={toggleSelect}/>
                 </section>
                 <section className="movie-poster-outline">
                     <Poster movieName={movies[movieID].movieName}/>
