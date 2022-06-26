@@ -26,7 +26,11 @@ Below is an example of the card specific to data collected about the 2011 Thor f
 - Run npm install via the command line
 - Run npm start
 
-### Technologies used
+### Technologies used:
+- The Beautiful Soup 4, pandas, Numpy, and Sockets Python libaries for data collection and cleaning
+- Python's TextBlob libary for sentiment analysis
+- React.js for overall UI creation
+- The Chart.js javascript library for the beutiful and robust charts
 
 To streamline the process, for viewers to use this analysis. I have embedded the data locally into this repository. All scripts used to web scrape, collect, clean, and manipulate the raw data can be found in /data. This cleaned data was used with the React.js framework to create the interactive UI you see above.
 
