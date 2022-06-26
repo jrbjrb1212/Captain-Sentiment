@@ -32,6 +32,7 @@ Below is an example of the card specific to data collected about the 2011 Thor f
 - React.js for overall UI creation
 - The Chart.js javascript library for the beutiful and robust charts
 
+### Side-note:
 To streamline the process, for viewers to use this analysis. I have embedded the data locally into this repository. All scripts used to web scrape, collect, clean, and manipulate the raw data can be found in /data. This cleaned data was used with the React.js framework to create the interactive UI you see above.
 
 ## Future Direction:
