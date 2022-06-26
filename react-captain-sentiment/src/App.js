@@ -6,11 +6,13 @@ import Header from "./components/Header"
 import Card from "./components/Cardwhole/Card"
 import Footer from "./components/Footer"
 const data = require("./components/Data.js");
+let currMovieID = 0
 
 
 function App() {
 
   const [movies, setMovies] = useState(data.movieData)
+  console.log(movies)
 
   const toggleSubjectivity = (id) => {
       // setMovies(movies.map((movie) => movie.id === id ? console.log(movie.id) : movie))
@@ -23,26 +25,9 @@ function App() {
     }
 
     const toggleNext = (id) => {
-        console.log(id)
+      currMovieID === movies.length-1 ? currMovieID = 0 : currMovieID++ 
+      setMovies(movies.map((movie) => movie.id === id ? movie : movie))
     }
-
-    // const movieTitle = movie.map( function (movie) {
-    //     return movie.movieName;
-    // });
-    function randomArrayShuffle(array) {
-      var currentIndex = array.length, temporaryValue, randomIndex;
-      while (0 !== currentIndex) {
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex -= 1;
-        temporaryValue = array[currentIndex];
-        array[currentIndex] = array[randomIndex];
-        array[randomIndex] = temporaryValue;
-    }
-    return array;
-    }
-
-    randomArrayShuffle(movies); 
-    console.log(movies)
     
   return (
     <div className="App">
@@ -52,7 +37,7 @@ function App() {
       <br />
       {/* Cardstack here */}
       <section className="card-body">
-        <Card movies={movies} onSubToggle={toggleSubjectivity} onPolToggle={togglePolarity}/>
+        <Card movies={movies} movieID={currMovieID} onSubToggle={toggleSubjectivity} onPolToggle={togglePolarity} onNext={toggleNext}/>
       </section>
       
       

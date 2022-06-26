@@ -1,7 +1,7 @@
-const Next_Button = ({ buttonName }) => {
+const Next_Button = ({ movie, buttonName, onNext }) => {
     return (
         <>
-            <button className="button-52" role="button">{buttonName}</button>
+            <button className="button-52" role="button" onClick={() => onNext(movie.id)}>{buttonName}</button>
         </>
     )
 
