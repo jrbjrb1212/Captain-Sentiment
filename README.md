@@ -7,7 +7,7 @@ The Marvel movies are all contained within an interconnected web of context, eve
 
 I present Captain Sentiment, an natural langauge analysis of the MCU movies using polarity and subjectivity measurements.
 
-![UI Design](UI_SS.png)
+![UI Design](Full_UI_SS.png)
 
 ## Features of the Website
 - Using the React.js framework, all information about movies are centralized to the center of the screen via a custom "movie card" component
