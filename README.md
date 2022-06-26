@@ -24,6 +24,7 @@ Below is an example of the card specific to data collected about the 2011 Thor f
 ## To Locally Use The Website and/or Code
 - Clone this repository
 - Run npm install via the command line
+- cd 
 - Run npm start
 
 ### Technologies used:
