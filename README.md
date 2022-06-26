@@ -29,16 +29,17 @@ Below is an example of the card speicifc to data collected about the 2011 Thor f
 To streamline the process, for viewers to use this analysis. I have embedded the data locally into this repositoiry. All scripts used to webscrape, collect, clean, and manipulate the raw data can be found in /data. This cleaned data was used with the React.js framework to create the interactive UI you see above.
 
 ## Future Direction:
-- Broader & more complex questions and responses
-- Apply to a broader selection of courses and majors
-- Improve transition system & state tracking for conversations
+- Hosting this webiste via a cloud service to allow for streamlined acess
+- Apply to analysis to smaller and larger movie intervals
+- Create 2 other graphical repersentations of the data
+- Develop a CRUD system for users to add there own movie and have it automtiaclly analyzed by my algoirthms
 
 
 ## Reflection
-- Generally, the project was an interesting experience to explore human conversation and translate that into a digital medium.
-- The concept we are implementing can be applied to a variety of problems; it isn’t dependent on ‘course advising’ in particular.
-- Our approach is modular and leaves many spaces where additional functionality can be added, either within our current framework or by modifying it.
-- Could the responsibilities of academic advisors in 5-10 years realistically be fulfilled by conversational AI?
+- Generally, the project was an interesting experience to explore movie screenwriting and translate that into a digital medium.
+- The concept we are implementing can be applied to a variety of problems. An interesting application would be comedy specials or the sentiment surrounding the word family in the Fast and Furious franchise. 
+- My approach is modular and leaves many spaces where additional functionality can be added, either within my current framework or by modifying it.
+- Does knowing that marvel movies are highly repetive in terms of polarity and subjectivty sentiment scores influnce how we percieve the films of the MCU?
 
 ## Acknowledgements
-We want to thank Dr. Matthew Stone for his assistance on this project throughout the semester and for giving us the opportunity to work on this course planning chatbot!
+I want to thank my fellow interns at Carnegie Mellon Unviersity's REUSE program for watching every single released movie at the time during the summer of 2021. I would not have completed this project without all of you!
