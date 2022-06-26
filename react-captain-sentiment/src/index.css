@@ -397,7 +397,7 @@ ul {
   width: 98%;
   height: auto;
   margin: 2px;
-  margin-top: 4%;
+  margin-top: 3%;
 }
 
 .movie-poster {
@@ -495,7 +495,7 @@ ul {
   display: inline-flex;
   flex: 1 1 auto;
   font-family: RobotoRegular;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   font-weight: 1200;
   justify-content: center;
   line-height: 1;
