@@ -10,10 +10,15 @@ I present Captain Sentiment, an natural langauge analysis of the MCU movies usin
 ![UI Design](UI_SS.png)
 
 ## Features of the Website
-- Movies order in the chronlogical order of the events/context of the MCU. Not a random ordering of the movies
+- Using the React.js framework, all information about movies are centralized to the center of the screen via a custom "movie card" component
+- Movies ordered in the chronlogical order of the events/context of the MCU. Not a random ordering of the movies
 - Load feature that displays one movie and its personal sentiment analysis at a time
 - A next button that allows for a user to switch between movies
 - Freedom to switch between polarity and subjectivity at the will of the user
+
+Below is an example of the card speicifc to data collected about the 2011 Thor film.
+
+![Card_UI Design](Card_UI_SS.png)
 
 
 ## To Locally Use The Website and/or Code
