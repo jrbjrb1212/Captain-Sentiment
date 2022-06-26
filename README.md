@@ -9,11 +9,17 @@ I present Captain Sentiment, an natural langauge analysis of the MCU movies usin
 
 ![UI Design](UI_SS.png)
 
+## Features of the Website
+- Movies order in the chronlogical order of the events/context of the MCU. Not a random ordering of the movies
+- Load feature that displays one movie and its personal sentiment analysis at a time
+- A next button that allows for a user to switch between movies
+- Freedom to switch between polarity and subjectivity at the will of the user
+
 
 ## To Locally Use The Website and/or Code
--** Clone this repository**
--**Run npm install via the command line**
--**Run npm start** 
+- Clone this repository
+- Run npm install via the command line
+- Run npm start
 
 To streamline the process, for viewers to use this analysis. I have embedded the data locally into this repositoiry. All scripts used to webscrape, collect, clean, and manipulate the raw data can be found in /data. This cleaned data was used with the React.js framework to create the interactive UI you see above.
 
